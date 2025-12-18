@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - Delhi Capitals 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link active">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1562077772-3bd90403f7f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>News & Updates</h1>
+            <p class="slogan">#YehHaiNayiDilli | Stay Informed</p>
+            <p>Get the latest news, match reports, player interviews, and exclusive updates from the Delhi Capitals camp.</p>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="player-filters">
+                <button class="filter-btn active" data-category="all">All News</button>
+                <button class="filter-btn" data-category="match">Match Reports</button>
+                <button class="filter-btn" data-category="player">Player News</button>
+                <button class="filter-btn" data-category="team">Team Updates</button>
+                <button class="filter-btn" data-category="interview">Interviews</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            
+            <div class="news-grid" id="newsContainer">
+                <!-- News articles will be loaded by JavaScript -->
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <button id="loadMoreNews" class="btn-primary">Load More News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="featured-story">
+                <div class="featured-image" style="background-color: var(--dc-blue); height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem; border-radius: 10px;">
+                    FEATURED STORY
+                </div>
+                <div class="featured-content">
+                    <div class="news-date">March 18, 2025</div>
+                    <h2>Delhi Capitals Announce New Sponsorship Deal with Tech Giant</h2>
+                    <p>Delhi Capitals have signed a groundbreaking three-year sponsorship deal with leading technology company TechNova. The deal, worth approximately ₹75 crore, makes TechNova the principal sponsor for the 2025 season and beyond.</p>
+                    <p>The partnership will focus on leveraging technology to enhance fan engagement, with plans for a new augmented reality experience for stadium attendees and digital ticketing innovations.</p>
+                    <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Video Updates</h2>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img" style="background-color: var(--dc-red); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">March 16, 2025</div>
+                        <h3 class="news-title">Match Highlights: DC vs SRH</h3>
+                        <p>Watch the key moments from our 24-run victory against Sunrisers Hyderabad.</p>
+                        <a href="#" class="read-more">Watch Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img" style="background-color: var(--dc-dark-blue); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">March 14, 2025</div>
+                        <h3 class="news-title">Exclusive: Rishabh Pant Interview</h3>
+                        <p>Our captain speaks about the team's preparation for IPL 2025 and his recovery journey.</p>
+                        <a href="#" class="read-more">Watch Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img" style="background-color: var(--dc-blue); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">March 12, 2025</div>
+                        <h3 class="news-title">Training Session Highlights</h3>
+                        <p>Behind-the-scenes look at our intense pre-season training camp in Delhi.</p>
+                        <a href="#" class="read-more">Watch Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="newsletter-signup">
+                <h2 class="section-title">Stay Updated</h2>
+                <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">Subscribe to our newsletter and never miss an update about Delhi Capitals.</p>
+                
+                <form id="newsletterForm" style="max-width: 500px; margin: 0 auto;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Enter your email" required style="flex: 1; padding: 12px; border: none; border-radius: 5px;">
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </div>
+                    <div style="font-size: 0.8rem; margin-top: 10px; text-align: center;">
+                        <input type="checkbox" id="privacyCheck" required>
+                        <label for="privacyCheck">I agree to receive updates and promotional content</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>

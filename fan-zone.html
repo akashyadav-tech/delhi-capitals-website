@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Zone - Delhi Capitals 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link active">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Fan Zone</h1>
+            <p class="slogan">#YehHaiNayiDilli | Join The Roar</p>
+            <p>Welcome to the heart of Delhi Capitals fandom! Participate in polls, join discussions, share your passion, and connect with fellow DC supporters.</p>
+        </div>
+    </section>
+
+    <!-- Fan Zone Features -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Fan Engagement</h2>
+            
+            <div class="fan-zone-container">
+                <div class="poll-container">
+                    <h3>Fan Poll of the Week</h3>
+                    <div class="poll-question">Who should be Delhi Capitals' opening pair for the next match?</div>
+                    
+                    <div class="poll-option" data-option="1">
+                        <div class="option-text">David Warner & Prithvi Shaw</div>
+                        <div class="vote-count">Votes: <span id="votes1">142</span></div>
+                        <div class="vote-bar" data-option="1"></div>
+                    </div>
+                    
+                    <div class="poll-option" data-option="2">
+                        <div class="option-text">David Warner & Mitchell Marsh</div>
+                        <div class="vote-count">Votes: <span id="votes2">98</span></div>
+                        <div class="vote-bar" data-option="2"></div>
+                    </div>
+                    
+                    <div class="poll-option" data-option="3">
+                        <div class="option-text">Prithvi Shaw & Yash Dhull</div>
+                        <div class="vote-count">Votes: <span id="votes3">65</span></div>
+                        <div class="vote-bar" data-option="3"></div>
+                    </div>
+                    
+                    <div class="poll-option" data-option="4">
+                        <div class="option-text">Rishabh Pant & David Warner</div>
+                        <div class="vote-count">Votes: <span id="votes4">28</span></div>
+                        <div class="vote-bar" data-option="4"></div>
+                    </div>
+                    
+                    <div class="poll-total">Total Votes: <span id="totalVotes">333</span></div>
+                    
+                    <button id="submitVote" class="btn-primary" style="margin-top: 20px; width: 100%;">Submit Your Vote</button>
+                    
+                    <div class="poll-note" style="margin-top: 15px; font-size: 0.9rem; color: var(--dc-dark-gray);">
+                        <i class="fas fa-info-circle"></i> You can vote once per week. Results update in real-time.
+                    </div>
+                </div>
+                
+                <div class="comments-section">
+                    <h3>Fan Discussions</h3>
+                    
+                    <div class="comment-form">
+                        <input type="text" class="comment-input" id="commentAuthor" placeholder="Your Name" maxlength="50">
+                        <textarea class="comment-input" id="commentText" placeholder="Share your thoughts about Delhi Capitals..." maxlength="500" rows="4"></textarea>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div id="charCount" style="font-size: 0.8rem; color: var(--dc-dark-gray);">500 characters remaining</div>
+                            <button class="comment-submit" id="submitComment">Post Comment</button>
+                        </div>
+                    </div>
+                    
+                    <div id="commentsContainer">
+                        <!-- Comments will be loaded by JavaScript -->
+                    </div>
+                    
+                    <div class="comments-pagination" style="margin-top: 20px; text-align: center;">
+                        <button id="loadMoreComments" class="btn-secondary">Load More Comments</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Gallery -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Fan Gallery</h2>
+            
+            <div class="gallery-intro" style="text-align: center; margin-bottom: 30px;">
+                <p>Share your Delhi Capitals fan moments using #DCFanHub on social media for a chance to be featured here!</p>
+            </div>
+            
+            <div class="fan-gallery">
+                <div class="gallery-item">
+                    <div class="fan-image" style="background-color: var(--dc-blue); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; border-radius: 10px;">
+                        <i class="fas fa-users" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="fan-caption">
+                        <strong>DC Fan Army at Arun Jaitley Stadium</strong>
+                        <div>Posted by: @DelhiFanatic</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="fan-image" style="background-color: var(--dc-red); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; border-radius: 10px;">
+                        <i class="fas fa-tshirt" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="fan-caption">
+                        <strong>My DC Jersey Collection</strong>
+                        <div>Posted by: @CapitalsCollector</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="fan-image" style="background-color: var(--dc-dark-blue); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; border-radius: 10px;">
+                        <i class="fas fa-palette" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="fan-caption">
+                        <strong>DC Fan Art - Digital Painting</strong>
+                        <div>Posted by: @ArtisticFan</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="#" class="btn-primary">Submit Your Fan Content</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Leaderboard -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Fan Leaderboard</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Our most active and engaged fans of the month</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Top Commenters</h3>
+                    <div class="stat-item-row">
+                        <span>1. @DelhiDevotee</span>
+                        <span class="stat-value">48 comments</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>2. @CapitalCrazy</span>
+                        <span class="stat-value">37 comments</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>3. @PantPatriot</span>
+                        <span class="stat-value">29 comments</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>4. @WarnerWarrior</span>
+                        <span class="stat-value">25 comments</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>5. @DCFanForever</span>
+                        <span class="stat-value">22 comments</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Poll Champions</h3>
+                    <div class="stat-item-row">
+                        <span>1. @PredictorPro</span>
+                        <span class="stat-value">8/10 correct</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>2. @VoteVictor</span>
+                        <span class="stat-value">7/10 correct</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>3. @PollPundit</span>
+                        <span class="stat-value">7/10 correct</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>4. @GuessGenius</span>
+                        <span class="stat-value">6/10 correct</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>5. @FanForecaster</span>
+                        <span class="stat-value">6/10 correct</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Content Contributors</h3>
+                    <div class="stat-item-row">
+                        <span>1. @PhotoFanatic</span>
+                        <span class="stat-value">15 photos</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>2. @VideoVeteran</span>
+                        <span class="stat-value">8 videos</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>3. @ArtAficionado</span>
+                        <span class="stat-value">6 artworks</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>4. @PoemPatriot</span>
+                        <span class="stat-value">5 poems</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>5. @StorytellerDC</span>
+                        <span class="stat-value">4 stories</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="leaderboard-note" style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: var(--dc-dark-gray);">
+                <i class="fas fa-trophy" style="color: gold;"></i> Top fans each month receive exclusive Delhi Capitals merchandise!
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Challenges -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Fan Challenges</h2>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-predictions"></i>
+                    </div>
+                    <h3>Match Predictor</h3>
+                    <p>Predict match outcomes, top scorers, and wicket-takers. Earn points for accurate predictions!</p>
+                    <a href="#" class="btn-secondary">Join Challenge</a>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Fan Photo Contest</h3>
+                    <p>Submit your best DC fan photos. Monthly winners get featured on our social media!</p>
+                    <a href="#" class="btn-secondary">Submit Photos</a>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design a Jersey</h3>
+                    <p>Create your dream Delhi Capitals jersey design. The winning design could become reality!</p>
+                    <a href="#" class="btn-secondary">Start Designing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/fan-zone.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule & Results - Delhi Capitals 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link active">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>IPL 2025 Schedule</h1>
+            <p class="slogan">#YehHaiNayiDilli | Follow Every Match</p>
+            <p>Check out Delhi Capitals' complete schedule for IPL 2025. Stay updated with match timings, venues, and results throughout the tournament.</p>
+        </div>
+    </section>
+
+    <!-- Match Schedule -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">IPL 2025 Schedule</h2>
+            
+            <div class="schedule-container">
+                <div class="match-tabs">
+                    <button class="match-tab active" data-tab="upcoming">Upcoming Matches</button>
+                    <button class="match-tab" data-tab="results">Previous Results</button>
+                    <button class="match-tab" data-tab="full">Full Schedule</button>
+                </div>
+                
+                <div class="match-list active" id="upcoming-matches">
+                    <!-- Upcoming matches will be loaded by JavaScript -->
+                </div>
+                
+                <div class="match-list" id="previous-results">
+                    <!-- Previous results will be loaded by JavaScript -->
+                </div>
+                
+                <div class="match-list" id="full-schedule">
+                    <!-- Full schedule will be loaded by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Fixtures -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Key Fixtures 2025</h2>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-icon" style="background-color: var(--dc-blue);">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Opener</h3>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">DC vs MI</div>
+                        <div class="fixture-date">March 23, 2025</div>
+                        <div class="fixture-venue">Arun Jaitley Stadium</div>
+                    </div>
+                    <p>Our first home match against arch-rivals Mumbai Indians.</p>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-icon" style="background-color: var(--dc-red);">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Derby Clash</h3>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">DC vs RCB</div>
+                        <div class="fixture-date">April 5, 2025</div>
+                        <div class="fixture-venue">M. Chinnaswamy Stadium</div>
+                    </div>
+                    <p>North vs South derby against Royal Challengers Bangalore.</p>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-icon" style="background-color: var(--dc-dark-blue);">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Final League Match</h3>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">DC vs CSK</div>
+                        <div class="fixture-date">May 18, 2025</div>
+                        <div class="fixture-venue">Arun Jaitley Stadium</div>
+                    </div>
+                    <p>Final league stage match against Chennai Super Kings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Information -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Match Venues</h2>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Arun Jaitley Stadium</h3>
+                    <p><strong>Capacity:</strong> 41,000</p>
+                    <p><strong>Home Matches:</strong> 7</p>
+                    <p><strong>Pitch Type:</strong> Balanced</p>
+                    <p>The historic venue in Delhi has been our fortress since 2008.</p>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Away Venues</h3>
+                    <p><strong>Wankhede Stadium:</strong> Mumbai</p>
+                    <p><strong>M. Chinnaswamy:</strong> Bengaluru</p>
+                    <p><strong>Eden Gardens:</strong> Kolkata</p>
+                    <p><strong>Narendra Modi:</strong> Ahmedabad</p>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Travel Schedule</h3>
+                    <p><strong>Total Away Matches:</strong> 7</p>
+                    <p><strong>Longest Away Stretch:</strong> 3 matches</p>
+                    <p><strong>Distance Traveled:</strong> ~8,500 km</p>
+                    <p><strong>Cities Visited:</strong> 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

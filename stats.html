@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Delhi Capitals 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link active">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1595435934247-5d33b7f92c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Team Statistics</h1>
+            <p class="slogan">#YehHaiNayiDilli | Numbers That Matter</p>
+            <p>Dive deep into Delhi Capitals' performance metrics, player statistics, and historical data from IPL seasons.</p>
+        </div>
+    </section>
+
+    <!-- Stats Navigation -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="player-filters">
+                <button class="filter-btn active" data-stats="overall">Overall Stats</button>
+                <button class="filter-btn" data-stats="batting">Batting Stats</button>
+                <button class="filter-btn" data-stats="bowling">Bowling Stats</button>
+                <button class="filter-btn" data-stats="records">Records</button>
+                <button class="filter-btn" data-stats="season">Season 2025</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overall Statistics -->
+    <section id="overall-stats">
+        <div class="container">
+            <h2 class="section-title">Overall Team Statistics</h2>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Team Performance</h3>
+                    <div class="stat-item-row">
+                        <span>Total Matches Played</span>
+                        <span class="stat-value">238</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Matches Won</span>
+                        <span class="stat-value">103</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Matches Lost</span>
+                        <span class="stat-value">131</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>No Results</span>
+                        <span class="stat-value">4</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Win Percentage</span>
+                        <span class="stat-value">43.28%</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>IPL Achievements</h3>
+                    <div class="stat-item-row">
+                        <span>Best Finish</span>
+                        <span class="stat-value">Runners-up (2020)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Playoffs Qualified</span>
+                        <span class="stat-value">4 Times</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Highest Total</span>
+                        <span class="stat-value">231/4 (vs KXIP)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Lowest Total</span>
+                        <span class="stat-value">83 (vs RCB)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Largest Victory</span>
+                        <span class="stat-value">97 runs</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Season-wise Performance</h3>
+                    <div class="chart-container" id="season-performance">
+                        <!-- Chart will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Batting Statistics -->
+    <section id="batting-stats" class="section-dark" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Batting Statistics</h2>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Top Run Scorers (All Time)</h3>
+                    <div id="all-time-scorers">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Best Batting Averages (Min. 500 runs)</h3>
+                    <div id="batting-averages">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Highest Strike Rates (Min. 500 runs)</h3>
+                    <div id="strike-rates">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container" style="margin-top: 30px;">
+                <div class="stat-box">
+                    <h3>Centuries & Fifties</h3>
+                    <div class="stat-item-row">
+                        <span>Total Centuries</span>
+                        <span class="stat-value">8</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Total Fifties</span>
+                        <span class="stat-value">87</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Centuries</span>
+                        <span class="stat-value">Shikhar Dhawan (2)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Fifties</span>
+                        <span class="stat-value">Shikhar Dhawan (35)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Highest Individual Score</span>
+                        <span class="stat-value">Rishabh Pant (128*)</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Sixes & Fours</h3>
+                    <div class="stat-item-row">
+                        <span>Total Sixes</span>
+                        <span class="stat-value">612</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Total Fours</span>
+                        <span class="stat-value">1,845</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Sixes (Player)</span>
+                        <span class="stat-value">Rishabh Pant (106)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Fours (Player)</span>
+                        <span class="stat-value">Shikhar Dhawan (401)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Sixes in an Innings</span>
+                        <span class="stat-value">Rishabh Pant (9)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bowling Statistics -->
+    <section id="bowling-stats" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Bowling Statistics</h2>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Top Wicket Takers (All Time)</h3>
+                    <div id="all-time-wickets">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Best Bowling Averages (Min. 20 wickets)</h3>
+                    <div id="bowling-averages">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Best Economy Rates (Min. 20 wickets)</h3>
+                    <div id="economy-rates">
+                        <!-- Content will be loaded by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container" style="margin-top: 30px;">
+                <div class="stat-box">
+                    <h3>Bowling Records</h3>
+                    <div class="stat-item-row">
+                        <span>Best Bowling Figures</span>
+                        <span class="stat-value">Kagiso Rabada (4/21)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most 4-wicket hauls</span>
+                        <span class="stat-value">Kagiso Rabada (3)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Dot Balls</span>
+                        <span class="stat-value">Amit Mishra (643)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Best Economy in an Innings</span>
+                        <span class="stat-value">Ashish Nehra (2/3)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Maidens</span>
+                        <span class="stat-value">Ashish Nehra (7)</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Current Season (2025)</h3>
+                    <div class="stat-item-row">
+                        <span>Total Wickets</span>
+                        <span class="stat-value">24</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Best Figures</span>
+                        <span class="stat-value">Anrich Nortje (3/18)</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Economy Rate</span>
+                        <span class="stat-value">8.25</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Dot Ball Percentage</span>
+                        <span class="stat-value">38.2%</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Wickets per Match</span>
+                        <span class="stat-value">6.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

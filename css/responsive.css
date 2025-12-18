@@ -1,0 +1,147 @@
+/* Delhi Capitals Website - Responsive Styles */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .team-overview {
+        flex-direction: column;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .match-teams {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .team {
+        margin-bottom: 20px;
+    }
+    
+    .match-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .match-actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--dc-white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        gap: 0;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+    
+    .hero {
+        padding: 150px 0 80px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .slogan {
+        font-size: 1.4rem;
+    }
+    
+    .achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .player-filters, .match-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .match-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .match-teams-schedule {
+        justify-content: center;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero {
+        padding: 130px 0 60px;
+    }
+    
+    .featured-grid, .news-preview, .players-grid, .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .fan-zone-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .match-preview {
+        padding: 20px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}

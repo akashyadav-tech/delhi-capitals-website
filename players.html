@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - Delhi Capitals 2025 Squad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link active">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1592656094267-764a60395ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>DC 2025 Squad</h1>
+            <p class="slogan">#YehHaiNayiDilli | Meet Our Warriors</p>
+            <p>Get to know the Delhi Capitals squad for IPL 2025. A perfect blend of experienced international stars and exciting young Indian talent.</p>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Players</h2>
+            
+            <div class="player-filters">
+                <button class="filter-btn active" data-filter="all">All Players</button>
+                <button class="filter-btn" data-filter="batsman">Batsmen</button>
+                <button class="filter-btn" data-filter="bowler">Bowlers</button>
+                <button class="filter-btn" data-filter="allrounder">All-Rounders</button>
+                <button class="filter-btn" data-filter="wk">Wicket Keepers</button>
+            </div>
+            
+            <div class="players-grid" id="playersContainer">
+                <!-- Player cards will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Squad Breakdown -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Squad Breakdown 2025</h2>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Player Categories</h3>
+                    <div class="stat-item-row">
+                        <span>Batsmen</span>
+                        <span class="stat-value">6</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>All-Rounders</span>
+                        <span class="stat-value">5</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Bowlers</span>
+                        <span class="stat-value">7</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Wicket Keepers</span>
+                        <span class="stat-value">2</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Total Players</span>
+                        <span class="stat-value">20</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Player Nationalities</h3>
+                    <div class="stat-item-row">
+                        <span>Indian Players</span>
+                        <span class="stat-value">13</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Overseas Players</span>
+                        <span class="stat-value">7</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Countries Represented</span>
+                        <span class="stat-value">6</span>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <h3>Squad Value</h3>
+                    <div class="stat-item-row">
+                        <span>Total Auction Spend</span>
+                        <span class="stat-value">₹85.5 Cr</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Most Expensive Player</span>
+                        <span class="stat-value">₹18.25 Cr</span>
+                    </div>
+                    <div class="stat-item-row">
+                        <span>Purse Remaining</span>
+                        <span class="stat-value">₹1.75 Cr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Captain & Key Players -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Captain & Leadership Group</h2>
+            
+            <div class="players-grid">
+                <div class="player-card">
+                    <div class="player-img" style="background-color: #004C93;">
+                        RP
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Rishabh Pant (C)</h3>
+                        <div class="player-role">Captain & Wicket-Keeper</div>
+                        <p>Dynamic left-handed batsman and wicket-keeper. Leading DC since 2021.</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">98</div>
+                                <div class="stat-label">Matches</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">2,838</div>
+                                <div class="stat-label">Runs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">140.5</div>
+                                <div class="stat-label">SR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-card">
+                    <div class="player-img" style="background-color: #EF1C23;">
+                        DW
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">David Warner (VC)</h3>
+                        <div class="player-role">Vice-Captain & Batsman</div>
+                        <p>Explosive Australian opener. One of the most successful IPL batsmen.</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">176</div>
+                                <div class="stat-label">Matches</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">6,397</div>
+                                <div class="stat-label">Runs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">139.9</div>
+                                <div class="stat-label">SR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-card">
+                    <div class="player-img" style="background-color: #003366;">
+                        AP
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">Axar Patel</h3>
+                        <div class="player-role">All-Rounder</div>
+                        <p>Left-arm spinner and handy lower-order batsman. DC's most reliable all-rounder.</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">136</div>
+                                <div class="stat-label">Matches</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">1,335</div>
+                                <div class="stat-label">Runs</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">111</div>
+                                <div class="stat-label">Wickets</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/players.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delhi Capitals 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Delhi<span>Capitals</span></div>
+                </a>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team Overview</a></li>
+                <li class="nav-item"><a href="players.html" class="nav-link">Players</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="stats.html" class="nav-link">Statistics</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="fan-zone.html" class="nav-link">Fan Zone</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 76, 147, 0.9), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="slogan">#YehHaiNayiDilli | Connect With Us</p>
+            <p>Have questions, feedback, or suggestions? We'd love to hear from you. Reach out to us through any of the channels below.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to us for any inquiries, feedback, or partnership opportunities. Our team is here to help!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Head Office & Stadium</h4>
+                            <p>Delhi Capitals, Arun Jaitley Stadium</p>
+                            <p>Bahadur Shah Zafar Marg, New Delhi - 110002</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Addresses</h4>
+                            <p><strong>General Inquiries:</strong> info@delhicapitals.co.in</p>
+                            <p><strong>Fan Support:</strong> fans@delhicapitals.co.in</p>
+                            <p><strong>Partnerships:</strong> partnerships@delhicapitals.co.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p><strong>Ticketing:</strong> +91 11 2331 9292</p>
+                            <p><strong>Corporate:</strong> +91 11 2331 9293</p>
+                            <p><strong>Hotline:</strong> 1800-103-9292 (Toll Free)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                            <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                            <p><strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" class="form-input" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" class="form-input" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-input" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select class="form-input" id="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="tickets">Ticket Information</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea class="form-textarea" id="message" placeholder="Type your message here..." rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="newsletter" checked>
+                                Subscribe to our newsletter for updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I buy tickets for Delhi Capitals matches?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tickets for Delhi Capitals home matches can be purchased through our official ticketing partner BookMyShow, at the stadium box office, or through authorized ticketing agents. Online booking typically opens 2-3 weeks before each match.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Where can I buy official Delhi Capitals merchandise?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Official Delhi Capitals merchandise is available at our stadium store during match days, through our online store on the official website, and at select retail partners across India. You can also purchase merchandise through our official Amazon store.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I apply for membership in the official fan club?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Membership applications for the official Delhi Capitals fan club are typically open during the pre-season period. You can apply through our official website. Members get exclusive benefits including early ticket access, member-only merchandise, and special fan events.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are stadium tours available at Arun Jaitley Stadium?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, guided stadium tours are available on non-match days. Tours include visits to the dressing rooms, practice facilities, and the museum. Booking can be done through our website or by contacting the stadium administration office.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I get player autographs or meet the team?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We organize fan meet-and-greet events throughout the season. Keep an eye on our social media channels and website for announcements about such events. Player autograph sessions are also organized after certain matches at designated areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Offices</h2>
+            
+            <div class="office-grid">
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Delhi Headquarters</h3>
+                    <p>Arun Jaitley Stadium</p>
+                    <p>Bahadur Shah Zafar Marg</p>
+                    <p>New Delhi - 110002</p>
+                    <p><strong>Phone:</strong> +91 11 2331 9292</p>
+                </div>
+                
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Office</h3>
+                    <p>JSW Centre</p>
+                    <p>Bandra Kurla Complex</p>
+                    <p>Mumbai - 400051</p>
+                    <p><strong>Phone:</strong> +91 22 4286 1000</p>
+                </div>
+                
+                <div class="office-card">
+                    <div class="office-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Fan Experience Center</h3>
+                    <p>Select Citywalk Mall</p>
+                    <p>Saket District Centre</p>
+                    <p>New Delhi - 110017</p>
+                    <p><strong>Phone:</strong> +91 11 4056 9292</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div style="background-color: var(--dc-blue); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                            <p>Arun Jaitley Stadium Location Map</p>
+                            <p style="font-size: 1rem; margin-top: 10px;">In a complete implementation, this would display an interactive Google Map</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-instructions">
+                    <h3>How to Reach Arun Jaitley Stadium</h3>
+                    <p><strong>By Metro:</strong> Take the Violet Line to Delhi Gate Metro Station (Gate No. 3) or the Blue Line to JLN Stadium Metro Station.</p>
+                    <p><strong>By Bus:</strong> DTC buses stop at Delhi Gate, Kashmere Gate, and ITO. The stadium is within walking distance from these stops.</p>
+                    <p><strong>By Car/Taxi:</strong> The stadium is easily accessible from all parts of Delhi. Parking is available at designated areas around the stadium.</p>
+                    <p><strong>Parking:</strong> Limited parking is available at the stadium. We recommend using public transport on match days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Delhi<span>Capitals</span></div>
+                    <p>The official fan hub of Delhi Capitals IPL team. Stay connected for the latest updates, player stats, match schedules, and exclusive fan content.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team Overview</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="stats.html">Statistics</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="fan-zone.html">Fan Zone</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with Delhi Capitals on social media</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Delhi Capitals. All rights reserved. | This is a fan website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
